@@ -25,7 +25,6 @@ img {
     position: relative;
     background: #fff;
     display: flex;
-    flex: 1;
     align-self: center;
     display: -webkit-flex;
     width: 70%;
@@ -33,10 +32,12 @@ img {
     flex-direction: column;
 }
 .main-header {
-    position: relative;
     background: rgba(0,0,0, 0.7);
     height: 50px;
-    width: 100%;
+    width: 70%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
 }
 .main-header_ul {
     display: flex;
@@ -77,11 +78,10 @@ img {
     top:17px;
 }
 .content-about_me {
-    margin-left: 300px;
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-evenly;
 }
 .content-me_photo {
     display: flex;
@@ -94,20 +94,22 @@ img {
     display: flex;
     vertical-align: top;
     position: relative;
-    padding-left: 50px;
 }
 .content-me_name li{
     padding: 0 20px 20px 0;
     font-weight: 500;
+    text-align: justify;
 }
 .content-me_name li span {
     font-weight: 400;
+    padding-left: 10px;
 }
 .footer {
     background: rgba(0,0,0, 0.7);
-    left: 0;
+    left: 15%;
     right: 0;
     bottom: 0;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     width: 70%;
