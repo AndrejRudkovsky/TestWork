@@ -22,3 +22,20 @@
     font-style:normal;
     font-stretch:normal
 }
+
+@font-face {
+    font-family: "entyporegularnew";
+    src: url("fonts/newentypo/entyponew.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'entyporegularnew';
+    src: url('fonts/newentypo/entyponew.eot'),
+    url('fonts/newentypo/entyponew.eot?#iefix') format("embedded-opentype"),
+    url('fonts/newentypo/entyponew.woff') format('woff'),
+    url('fonts/newentypo/entyponew.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

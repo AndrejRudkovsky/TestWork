@@ -1,0 +1,36 @@
+.social {
+    font-family: "entyporegularnew";
+    font-style: normal;
+    position: relative;
+    color: rgba(255,255,255, 0.7);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.social:hover {
+    color: #ffffff;
+}
+
+.social:before {
+    font-size: 20px;
+}
+
+.s-facebook:before {
+    content: "\00e4";
+}
+
+.s-twitter:before {
+    content: "\00e5";
+}
+
+.s-vkontakte:before {
+    content: "\00e6";
+}
+
+.s-odnoklassniki:before {
+    content: "\00e9";
+}
+
+.s-livejournal:before {
+    content: "\00ec";
+}
