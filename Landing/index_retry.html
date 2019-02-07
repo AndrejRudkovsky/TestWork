@@ -8,7 +8,7 @@
     <link href="Content/Style/base_retry.css" rel="stylesheet" type="text/css"/>
     <link href="Content/Style/fonts.css" rel="stylesheet" type="text/css"/>
     <link href="Content/Style/social.css" rel="stylesheet" type="text/css"/>
-    <link href="Content/Style/call_me.css" rel="stylesheet" type="text/css"/>
+    <!-- <link href="Content/Style/call_me.css" rel="stylesheet" type="text/css"/>-->
 </head>
 <body>
 <div class="wrapper">
@@ -36,7 +36,7 @@
             </li>
         </ul>
     </div>
-    <div class="allcontent">
+    <div class="wrapper">
         <div class="content">
             <a name="about_me">Обо мне</a>
             <span class="content-block">
@@ -68,9 +68,12 @@
         <div class="content">
             <a name="hobby">Увлечения</a>
             <div class="content-block">
-                <a class="content-me_photo" href="https://vk.com/club2642710" target="_blank"><img src="Content/Img/diver.jpg" alt="Encouter"></a>
-                <a class="content-me_photo" href="https://music.yandex.ru/users/toseennew/playlists" target="_blank"><img src="Content/Img/Music.png" alt="Музыка"></a>
-                <a class="content-me_photo" href="" target="_blank"><img src="Content/Img/happy_tree_friends.png" alt="Книги"></a>
+                <a class="content-me_photo" href="https://vk.com/club2642710" target="_blank"><img
+                        src="Content/Img/diver.jpg" alt="Encouter"></a>
+                <a class="content-me_photo" href="https://music.yandex.ru/users/toseennew/playlists"
+                   target="_blank"><img src="Content/Img/Music.png" alt="Музыка"></a>
+                <a class="content-me_photo" href="" target="_blank"><img src="Content/Img/happy_tree_friends.png"
+                                                                         alt="Книги"></a>
             </div>
         </div>
         <div class="content">
@@ -79,28 +82,29 @@
                 <form class="contact_form" action="call_me.php" method="post">
                     <p>
                         <label for="name">Имя:</label>
-                        <input type="text"  name="name" placeholder="Введите ваше имя" required />
+                        <input type="text" name="name" placeholder="Введите ваше имя" required/>
                     </p>
                     <p>
                         <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Введите электронный адрес" required />
+                        <input type="email" name="email" placeholder="Введите электронный адрес" required/>
                         <span class="form_hint">Правильный формат "name@something.com"</span>
                     </p>
                     <p>
                         <label for="tel">Телефон:</label>
-                        <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+                        <input type="tel" name="tel" placeholder="Введите номер телефона" required/>
                         <span class="form_hint">Правильный формат "+7-123-4567890"</span>
                     </p>
                     <p>
                         <label for="website">Сайт:</label>
-                        <input type="url" name="website" placeholder="Введите адрес вашего сайта" pattern="(http|https)://.+"/>
+                        <input type="url" name="website" placeholder="Введите адрес вашего сайта"
+                               pattern="(http|https)://.+"/>
                         <span class="form_hint">Правильный формат "http://someaddress.com"</span>
                     </p>
                     <p>
                         <label for="message">Текст сообщения:</label>
-                        <textarea name="message" cols="40" rows="6" required ></textarea>
+                        <textarea name="message" cols="40" rows="6" required></textarea>
                     </p>
-                    <input name="bezspama" type="text" style="display:none" value="" />
+                    <input name="bezspama" type="text" style="display:none" value=""/>
                     <p>
                         <button class="submit" type="submit">Отправить сообщение</button>
                     </p>
@@ -109,10 +113,12 @@
         </div>
     </div>
     <div class="footer">
-        <span>2019 ©Toseen</span>
-        <a href="https://vk.com/toseen" class="social s-vkontakte"></a>
-        <a href="https://www.facebook.com/nforen" class="social s-facebook"></a>
-        <a href="https://www.youtube.com/channel/UCiZdK5Igs6yyju1_1_aEfWA" class="social s-youtube"></a>
+        <div>
+            <span>2019 ©Toseen</span>
+            <a href="https://vk.com/toseen" class="social s-vkontakte"></a>
+            <a href="https://www.facebook.com/nforen" class="social s-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCiZdK5Igs6yyju1_1_aEfWA" class="social s-youtube"></a>
+        </div>
     </div>
 </div>
 </body>

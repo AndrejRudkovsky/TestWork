@@ -20,13 +20,6 @@ img {
     margin: 0;
     display: block;
 }
-.clearfix:after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
 .wrapper {
     position: relative;
     background: #fff;
@@ -64,11 +57,12 @@ img {
 .main-header_li a:hover {
     color: rgba(255,255,255, 0.8);
 }
-.allcontent {
+.wrapper {
     display: block;
     position: relative;
     padding-top: 50px;
-    min-height: 94.7vh;
+    /*height: calc(100% - 50px);*/
+    min-height: 100vh;
 }
 .content {
     position: relative;
@@ -130,13 +124,17 @@ img {
 .footer {
     background: rgba(0,0,0, 0.7);
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    display: block;
     width: 100%;
     align-self: center;
     min-width: 600px;
     min-height: 30px;
     color: #cacaca;
+}
+.footer div {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
 }
 .footer span {
     position: absolute;
