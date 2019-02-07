@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow"/>
     <title>Landing Page</title>
-    <link href="Content/Style/base_retry.css" rel="stylesheet"/>
-    <link href="Content/Style/fonts.css" rel="stylesheet"/>
-    <link href="Content/Style/social.css" rel="stylesheet"/>
+    <link href="Content/Style/base_retry.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/Style/fonts.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/Style/social.css" rel="stylesheet" type="text/css"/>
+    <link href="Content/Style/call_me.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div class="wrapper">
@@ -34,32 +36,84 @@
             </li>
         </ul>
     </div>
-    <div class="content">
-        <a name="about_me">Обо мне</a>
-        <span class="content-about_me">
+    <div class="allcontent">
+        <div class="content">
+            <a name="about_me">Обо мне</a>
+            <span class="content-block">
             <div class="content-me_photo"><img src="Content/Img/Photo.png" alt="Я"></div>
             <div class="content-me_name">
                 <ul>
-                    <li>Родился:<span>04.02.2019</span></li>
-                    <li>Имя:<span>Обыкновенная пиранья</span></li>
-                    <li>Религия:<span>Поедание человеков</span></li>
+                    <li>Родился:<span>02.03.1987</span></li>
+                    <li>ФИО:<span>Рудковский Андрей Владимирович</span></li>
+                    <li>Религия:<span>Православие</span></li>
+                    <li>Город:<span>Севастополь</span></li>
                 </ul>
             </div>
         </span>
+        </div>
+        <div class="content">
+            <a name="education">Образование</a>
+            <div class="content-block">
+                <ul class="clearUl">
+                    <li>Вуз:<span>СевНТУ (бывш. СГТУ, СПИ) '09</span></li>
+                    <li>Факультет:<span> Автоматики и вычислительной техники</span></li>
+                    <li>Кафедра/направление:<span> Информационных систем (ИС)</span></li>
+                    <li>Форма обучения:<span> Очное отделение</span></li>
+                    <li>Статус:<span> Выпускник (специалист)</span></li>
+                    <li>Специальность:<span> Инженер-системотехник</span></li>
+                    <li>Школа:<span> Школа №29 '03 Севастополь, 2001–2003 (в) Лиц. ФизМат</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <a name="hobby">Увлечения</a>
+            <div class="content-block">
+                <a class="content-me_photo" href="https://vk.com/club2642710" target="_blank"><img src="Content/Img/diver.jpg" alt="Encouter"></a>
+                <a class="content-me_photo" href="https://music.yandex.ru/users/toseennew/playlists" target="_blank"><img src="Content/Img/Music.png" alt="Музыка"></a>
+                <a class="content-me_photo" href="" target="_blank"><img src="Content/Img/happy_tree_friends.png" alt="Книги"></a>
+            </div>
+        </div>
+        <div class="content">
+            <a name="call_me">Обратная связь</a>
+            <div class="content-block">
+                <form class="contact_form" action="call_me.php" method="post">
+                    <p>
+                        <label for="name">Имя:</label>
+                        <input type="text"  name="name" placeholder="Введите ваше имя" required />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Введите электронный адрес" required />
+                        <span class="form_hint">Правильный формат "name@something.com"</span>
+                    </p>
+                    <p>
+                        <label for="tel">Телефон:</label>
+                        <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+                        <span class="form_hint">Правильный формат "+7-123-4567890"</span>
+                    </p>
+                    <p>
+                        <label for="website">Сайт:</label>
+                        <input type="url" name="website" placeholder="Введите адрес вашего сайта" pattern="(http|https)://.+"/>
+                        <span class="form_hint">Правильный формат "http://someaddress.com"</span>
+                    </p>
+                    <p>
+                        <label for="message">Текст сообщения:</label>
+                        <textarea name="message" cols="40" rows="6" required ></textarea>
+                    </p>
+                    <input name="bezspama" type="text" style="display:none" value="" />
+                    <p>
+                        <button class="submit" type="submit">Отправить сообщение</button>
+                    </p>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="content">
-        <a name="education">Образование</a>
+    <div class="footer">
+        <span>2019 ©Toseen</span>
+        <a href="https://vk.com/toseen" class="social s-vkontakte"></a>
+        <a href="https://www.facebook.com/nforen" class="social s-facebook"></a>
+        <a href="https://www.youtube.com/channel/UCiZdK5Igs6yyju1_1_aEfWA" class="social s-youtube"></a>
     </div>
-    <div class="content">
-        <a name="hobby">Увлечения</a>
-    </div>
-    <div class="content">
-        <a name="call_me">Обратная связь</a>
-    </div>
-</div>
-<div class="footer">
-    <a href="https://vk.com/toseen" class="social s-vkontakte">
-    </a>
 </div>
 </body>
 </html>
