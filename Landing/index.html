@@ -1,79 +1,133 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow" />
     <title>Landing Page</title>
-    <link href="Content/Style/base.css" rel="stylesheet"/>
-    <link href="Content/Style/fonts.css" rel="stylesheet"/>
+    <link href="content/style/index.css" rel="stylesheet" type="text/css" />
+    <link href="content/style/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="content/style/social.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="wrapper">
-    <div class="main-header">
-        <ul class="main-header_ul">
-            <li class="main-header_li">
-                <a href="#about_me">
-                    Обо мне
-                </a>
-            </li>
-            <li class="main-header_li">
-                <a href="#education">
-                    Образование
-                </a>
-            </li>
-            <li class="main-header_li">
-                <a href="#hobby">
-                    Увлечения
-                </a>
-            </li>
-            <li class="main-header_li">
-                <a href="#call_me">
-                    Обратная связь
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="content">
-        <a name="about_me"></a>
-        <div class="content-me">
-            <div class="content-me_photo">
-                <img src="Content/Img/Photo.png" alt="Happy me">
+    <div class="wrapper">
+        <div class="main-header">
+            <ul class="main-header_ul">
+                <li class="main-header_li">
+                    <a href="#about_me">
+                        Обо мне
+                    </a>
+                </li>
+                <li class="main-header_li">
+                    <a href="#education">
+                        Образование
+                    </a>
+                </li>
+                <li class="main-header_li">
+                    <a href="#hobby">
+                        Увлечения
+                    </a>
+                </li>
+                <li class="main-header_li">
+                    <a href="#call_me">
+                        Обратная связь
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="allcontent">
+            <div class="content">
+                <a name="about_me">Обо мне</a>
+                <span class="content-block">
+                    <div class="content-me_photo"><img src="content/img/me_to.jpg" alt="Я" id="me"></div>
+                    <div class="content-me_name">
+                        <ul>
+                            <li>Родился:<span>02.03.1987</span></li>
+                            <li>ФИО:<span>Рудковский Андрей Владимирович</span></li>
+                            <li>Религия:<span>Православие</span></li>
+                            <li>Город:<span>Севастополь</span></li>
+                        </ul>
+                    </div>
+                </span>
             </div>
-            <div class="content-me_info">
-                <ul>
-                    <li>Родился:
-                        <span>
-                        04.02.2019
-                    </span>
-                    </li>
-                    <li>Имя:
-                        <span>
-                        Обыкновенная пиранья
-                    </span>
-                    </li>
-                    <li>Религия:
-                        <span>
-                        Поедание человеков
-                    </span>
-                    </li>
-                </ul>
+            <div class="content">
+                <a name="education">Образование</a>
+                <div class="content-block">
+                    <ul class="clearUl">
+                        <li>Вуз:<span>СевНТУ (бывш. СГТУ, СПИ) '09</span></li>
+                        <li>Факультет:<span> Автоматики и вычислительной техники</span></li>
+                        <li>Кафедра/направление:<span> Информационных систем (ИС)</span></li>
+                        <li>Форма обучения:<span> Очное отделение</span></li>
+                        <li>Статус:<span> Выпускник (специалист)</span></li>
+                        <li>Специальность:<span> Инженер-системотехник</span></li>
+                        <li>Школа:<span> Школа №29 '03 Севастополь, 2001–2003 (в) Лиц. ФизМат</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <a name="hobby">Увлечения</a>
+                <div class="content-block">
+                    <a class="content-me_photo" href="https://vk.com/club2642710" target="_blank">
+                        <img src="content/img/extreme_old_people.jpg" alt="Encouter">
+                        <span class="tooltip">Международная сеть городских игр Encounter<br />Команда "Деменция"</span>
+                    </a>
+                    <a class="content-me_photo" href="https://music.yandex.ru/users/toseennew/playlists"
+                       target="_blank">
+                        <img src="content/img/music.png" alt="Музыка">
+                        <span class="tooltip">Люблю музыку, много музыки, разной музыки, даа..</span>
+                    </a>
+                    <a class="content-me_photo" href="" target="_blank">
+                        <img src="content/img/happy_tree_friends.png"
+                             alt="Книги">
+                        <span class="tooltip">И книги люблю, фентези, ужасы, фантастика</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <a name="call_me">Обратная связь</a>
+                <div class="content-block">
+                    <form id="contactForm" action="" method="post">
+                        <div class="field-block">
+                            <label for="name">Ваше имя:</label>
+                            <input id="name" class="field" name="name" required type="text" placeholder="Иван Иванович">
+                        </div>
+                        <div class="field-block">
+                            <label for="email">Ваш E-mail:</label>
+                            <input id="email" class="field" name="email" required type="email"
+                                   placeholder="email@email.com">
+                        </div>
+                        <div class="field-block">
+                            <label for="phone">Ваш телефон:</label>
+                            <input id="phone" class="field" name="phone" required type="text"
+                                   placeholder="+7 (800) 000-00-00">
+                        </div>
+                        <div class="field-block">
+                            <label for="message">Текст сообщения:</label>
+                            <textarea id="message" class="field" required name="message" rows="4"></textarea>
+                        </div>
+                        <div class="field-block">
+                            <input id="check" name="check" checked type="checkbox">
+                            <span class="check-text">Я добровольно отправляю свои данные</span>
+                        </div>
+                        <button id="button" class="button" type="submit">Отправить</button>
+                        <div class="result">
+                            <span id="answer"></span>
+                            <span id="loader"><img src="content/img/loader.gif" alt=""></span>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <a name="education"></a>
-        <div class="content-education">
-        </div>
-        <a name="hobby"></a>
-        <div class="content-hobby">
-        </div>
-        <a name="call_me"></a>
-        <div class="content-call_me">
+        <div class="footer">
+            <span>2019 ©Toseen</span>
+            <a href="https://vk.com/toseen" class="social s-vkontakte"></a>
+            <a href="https://www.facebook.com/nforen" class="social s-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCiZdK5Igs6yyju1_1_aEfWA" class="social s-youtube"></a>
         </div>
     </div>
-</div>
-<div class="footer">
-    <a href="">
-        vk
-    </a>
-</div>
+    <link href="content/style/call_me.css" rel="stylesheet" type="text/css" />
+    <script src="content/script/jquery.min.js"></script>
+    <script src="content/script/jquery.maskedinput.min.js"></script>
+    <script src="content/script/main.js"></script>
 </body>
 </html>
