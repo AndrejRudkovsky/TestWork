@@ -1,0 +1,143 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    font: 15px "YS Text", Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    min-width: 320px;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+}
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.wrapper {
+    position: relative;
+    background: #fff;
+    display: flex;
+    align-self: center;
+    display: -webkit-flex;
+    width: 70%;
+    min-width: 600px;
+    flex-direction: column;
+}
+.main-header {
+    background: rgba(0,0,0, 0.7);
+    height: 50px;
+    width: 70%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+.main-header_ul {
+    display: flex;
+    vertical-align: top;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+.main-header_li {
+    display: flex;
+}
+.main-header_li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.main-header_li a:hover {
+    color: rgba(255,255,255, 0.8);
+}
+.wrapper {
+    display: block;
+    position: relative;
+    padding-top: 50px;
+    /*height: calc(100% - 50px);*/
+    min-height: 100vh;
+}
+.content {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.content a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+/*.content a:before {
+    content: '-';
+    font-size: 3em;
+    color: rgba(0,0,0, 0.7);
+    position: relative;
+    top:17px;
+    display: inline-block;
+    height: 20px;
+}*/
+.content-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 0 0 10%;
+}
+.content-block li{
+    padding: 0 10px 10px 0;
+    font-weight: 500;
+    text-align: justify;
+}
+.content-block li span {
+    font-weight: 400;
+    padding-left: 10px;
+}
+.content-me_photo {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.content-me_photo img{
+    width: 100%;
+    height: 100%;
+}
+.content-me_name {
+    display: flex;
+    vertical-align: top;
+    position: relative;
+}
+
+.clearUl {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer {
+    background: rgba(0,0,0, 0.7);
+    position: relative;
+    display: block;
+    width: 100%;
+    align-self: center;
+    min-width: 600px;
+    min-height: 30px;
+    color: #cacaca;
+}
+.footer div {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+.footer span {
+    position: absolute;
+    left: 10px;
+    padding: 5px;
+}
